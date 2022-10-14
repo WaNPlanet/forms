@@ -1,0 +1,15 @@
+.masterhead{
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+}
+.circle{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+.circle img{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}

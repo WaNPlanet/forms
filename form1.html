@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="form1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="form__container">
+        <div class="title__container">
+            <h1>STUDENTS ASSESSMENT OF TEACHING AND COURSES (SATC)</h1>
+            <p>
+                This questionnaire is designed to enable us assess the overall performance of each lecturer.<br>
+                 Your candid and objective appraisal will go a long way in enhancing the quality of the programme.
+                </p>
+        </div>
+        <div class="body__container">
+            <div class="left__container">
+                <div class="side__titles">
+                    <div class="title__name">
+                        <h3>Your name</h3>
+                        <p>Enter & press next</p>
+                    </div>
+                    <div class="title__name">
+                        <h3>Desctibes</h3>
+                        <p>select & press next</p>
+                    </div>
+                    <div class="title__name">
+                        <h3>Services</h3>
+                        <p>select & press next</p>
+                    </div>
+                    
+                </div>
+                <div class="progress__bar__container">
+                    <ul>
+                        <li class="active" id="icon1"><ion-icon name="person-outline"></ion-icon></li>
+                        <li id="icon2"><ion-icon name="book-outline"></ion-icon></li>
+                        <li id="icon3"><ion-icon name="layers-outline"></ion-icon></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right__container">
+                <fieldset id="form1">
+                    <div class="sub__title__container ">
+                        <p>Step 1/3</p>
+                        <div class="input__container">
+                            <label for="name">Name of Lecturer: </label>
+                            <input type="text">
+                        </div>
+                        <div class="input__container">
+                            <label for="name">Part – Time or Full Time </label>
+                            <input type="text">
+                        </div>
+                        <div class="input__container">
+                            <label for="name">Department </label>
+                            <input type="text">
+                        </div>
+                        <div class="input__container">
+                            <label for="name">Course Code & Title </label>
+                            <input type="text">
+                        </div>
+                        <div class="input__container">
+                            <label for="name">Semester/Trimester & Year</label>
+                            <input type="text">
+                        </div>
+                        <div class="input__container">
+                            <label for="name">Class Size</label>
+                            <input type="text">
+                        </div>
+                        <div class="input__container">
+                            <label for="name">Session:</label>
+                            Morning <input type="checkbox">
+                            Morning <input type="checkbox">
+                            Morning <input type="checkbox">
+                            Morning <input type="checkbox">
+                        </div>
+                    </div>
+                    
+                    <div class="input__container">
+                        <a class="nxt__btn" onclick="nextForm();"> Next</a>
+                    </div>
+                </fieldset>
+                <fieldset class="active__form" id="form2">
+                    <div class="sub__title__container">
+                        <p>Step 2/3</p>
+                        <p>Please assess the lecturer’s performance using the key provided below by ticking the box you consider appropriate.
+
+                           <h6>Key</h6> 
+                            Excellent 5,
+                            Very Good	4,
+                            Good		3,
+                            Satisfactory	2,
+                            Poor 		1.
+                            </p>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th style="color: #fff;">
+                                            Course Content       
+                                        </th>
+                                        <th>
+                                            5
+                                        </th>
+                                        <th>
+                                            4
+                                        </th>
+                                        <th>
+                                            3
+                                        </th>
+                                        <th>
+                                            2
+                                        </th>
+                                        <th>
+                                            1
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            Provision of helpful course outlines
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Coverage of course content by lecturer
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                    <p>Class Attendance</p>
+                                    <tr>
+                                        <td>
+                                            Regular holding of classes
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Punctuality
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                    </tr>
+                                    
+                                        
+                                        <h5 style="color: #fff;">Mode of Delivery</h5>
+                                        <tr>
+                                        <td>
+                                            Command of the Subject matter
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Interaction with students in class
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            Use of class time to promote learning
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            Promotion of independent study
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            Promotion of problem solving learning
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Response to students’ concerns
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Adequacy of class assignments
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Marking and discussion of class assignments
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br>
+                        <h5 style="color: white;">General Assessment of Lecturer</h5>
+                        <p>What is your general impression of the Lecturer?</p>                                            
+                        <div class="input__container">
+                            Excellent <input type="checkbox">
+                            Very Good <input type="checkbox">
+                            Good <input type="checkbox">
+                            Satisfactory  <input type="checkbox">
+                            Unsatisfactory   <input type="checkbox">
+                        </div>
+                        
+                        <div class="input__container">
+                            <label for="name">Please specify if unsatisfactory,</label>
+                            <input type="text">
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="input__container">
+                        
+                        
+                        <div class="buttons">
+                            <a class="prev__btn" onclick="prevForm();" >Back</a>
+                            <a class="nxt__btn"  onclick="nextForm();" >Next</a>    
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="active__form" id="form3">
+                    <div class="sub__title__container">
+                        <p>Step 3/3</p>
+                        <p>Assessment of Course. Please provide brief statements in the spaces provided below:</p>
+                      
+                    </div>
+                    
+                    <div class="input__container">
+                        <div class="input__container">
+                            <label for="name">Which aspect of the course did you find most helpful? </label>
+                            <input type="text" placeholder="Please specify">
+                        </div>
+                        <div class="input__container">
+                            <label for="name">Which aspects of the course did you find difficult?  </label>
+                            <input type="text">
+                        </div>
+                        <div class="input__container">
+                            <label for="name">Which aspect of the course did you dislike most? </label>
+                            <input type="text">
+                        </div>
+                        <div class="input__container">
+                            <label for="name">What suggestions do you have for improving the course? </label>
+                            <input type="text" placeholder="01">
+                            <input type="text" placeholder="02">
+                            <input type="text" placeholder="03">
+                        </div>
+                        <div class="buttons">
+                            <a class="prev__btn" onclick="prevForm();" >Back</a>
+                            <a class="nxt__btn" id="submitBtn"  onclick="nextForm();" >Submit</a>    
+                        </div>
+                    </div>
+                </fieldset>
+               
+               
+            </div>
+        </div>
+    </div>
+
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <script>
+    const nxtBtn = document.querySelector('#submitBtn');
+const form1 = document.querySelector('#form1');
+const form2 = document.querySelector('#form2');
+const form3 = document.querySelector('#form3');
+
+
+
+const icon1 = document.querySelector('#icon1');
+const icon2 = document.querySelector('#icon2');
+const icon3 = document.querySelector('#icon3');
+
+
+
+var viewId = 1;
+function nextForm(){
+    console.log("hellonext");
+    viewId=viewId+1;
+    progressBar();
+    displayForms();
+    
+    console.log(viewId);
+
+}
+
+function prevForm(){
+    console.log("helloprev");
+    viewId=viewId-1;
+    console.log(viewId);
+    progressBar1();
+    displayForms();
+}
+function progressBar1(){
+    if(viewId===1){
+        icon2.classList.add('active');
+        icon2.classList.remove('active');
+        icon3.classList.remove('active');
+
+    }
+    if(viewId===2){
+        icon2.classList.add('active');
+        icon3.classList.remove('active');
+     
+    }
+    if(viewId===3){
+        icon3.classList.add('active');
+    }
+}
+
+function progressBar(){
+    if(viewId===2){
+        icon2.classList.add('active');
+    }
+    if(viewId===3){
+        icon3.classList.add('active');
+    }
+}
+
+function displayForms(){
+    
+    if(viewId>3){
+        viewId=1;
+    }
+
+    if(viewId ===1){
+        form1.style.display = 'block';
+        form2.style.display = 'none';
+        form3.style.display = 'none';
+
+
+
+    }else if(viewId === 2){
+        form1.style.display = 'none';
+        form2.style.display = 'block';
+        form3.style.display = 'none';
+
+
+    }else if(viewId === 3){
+        form1.style.display = 'none';
+        form2.style.display = 'none';
+        form3.style.display = 'block';
+
+    }
+}
+
+// for slider
+
+var slider = document.querySelector(".slider");
+var output = document.querySelector(".output__value");
+output.innerHTML = slider.value ;
+
+slider.oninput = function() {
+    output.innerHTML = this.value ;
+    
+}
+  </script>
+</body>
+</html>
